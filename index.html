@@ -2,11 +2,65 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="index.css" />
-    <script type="text/javascript" src="index.js" defer></script>
+    <title>document</title>
   </head>
   <body>
+
     <div id="main">
       
     </div>
+
+
+    <label>Choisis un parfum de glace:
+      <select id="glace" name="glace">
+        <option value="">choix …</option>
+        <option value="chocolat">Chocolat</option>
+        <option value="sardine">Sardine</option>
+        <option value="vanille">Vanille</option>
+      </select>
+    </label>
+    
+    <div class="resultat"></div>
+
+    <br>
+
+    <input placeholder="entrer votre texte" name="name"/>
+
+    <p id="afficher"></p>
+
+    <textarea placeholder="entre vos mots" name="name" id="zoneDeText" cols="30" rows="10"></textarea>
+
+    <p id="afficher1"></p>
+
+    <p>position de la souris (<span id="souris-x"></span>,<span id="souris-y"></span>)</p>
+
+    <form>
+      <div><input type="text" id="name" placeholder="Nom" /></div>
+      <div>
+        <select id="gender">
+          <option>Choisissez une valeur</option>
+          <option value="male">Homme</option>
+          <option value="female">Femme</option>
+          <option value="other">Autre</option>
+        </select>  
+      </div>
+    </form>
+    
+    <div id="result">
+      Nom : <span id="res-name"></span><br/>
+      Genre : <span id="res-gender"></span><br/>
+      Souris : (<span id="mouse-x"></span>, <span id="mouse-y"></span>)
+    </div>
+    
+
+    <div><button id="demandeMoi">Bien le bonjour</button></div>
+    <div id="leResultatDemande"></div>
+
+    <div><button id="demandeMoi1">un nouvel essaye</button></div>
+    <div id="leResultatDemande1"></div>
+
+    <input type="button" value="verrouillage" onclick="verrouillage()" id="verrouillage">
+
+    <script type="text/javascript" src="index.js" defer></script>
   </body>
 </html>
